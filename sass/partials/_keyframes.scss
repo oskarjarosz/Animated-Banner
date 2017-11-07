@@ -33,3 +33,13 @@
 		top: 435px;
 	}
 }
+
+
+@keyframes separate {
+	from {
+		justify-content: center;
+	}
+	to {
+		justify-content: space-between;
+	}
+}

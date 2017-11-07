@@ -1,12 +1,19 @@
+@import '../partials/keyframes';
 $font-stack: 'Arial',
 sans-serif;
+
 
 @mixin backgroundImage($h) {
 	background: url('../images/sprite.png') $h -100px no-repeat;
 }
 
-@mixin row($animationName) {
+@mixin row() {
 	top: -100px;
 	left: 200px;
-	animation: $animationName 1s 1 linear forwards;
+}
+
+@animation($value...) {
+	-webkit-animation: $value;
+	-moz-animation: $value;
+	animation: $value;
 }
