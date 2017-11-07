@@ -16,14 +16,16 @@ gulp.task('serve', ['sass'], function () {
 	});
 
 	gulp.watch('*.html', ['reload']);
-	gulp.watch('scss/**/*.scss', ['sass']);
+	gulp.watch('sass/**/*.scss', ['sass']);
 });
 
 
 gulp.task('sass', function () {
-	return gulp.src('scss/**/*.scss')
+	return gulp.src('sass/**/*.scss')
 		.pipe(sourcemaps.init())
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({
+			outputStyle: 'expanded'
+		}).on('error', sass.logError))
 
 		.pipe(autoprefixer({
 			browsers: ['last 3 versions']

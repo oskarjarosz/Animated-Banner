@@ -1,0 +1,29 @@
+@import '../modules/_variables';
+
+html {
+	font-size: 62.5%;
+	font-style: $font-stack;
+	.container {
+		width: 100rem;
+		height: 60rem;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		.row {
+			position: absolute;
+			width: 60rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.text {
+			width: 30rem;
+			text-transform: uppercase;
+			font-size: 3rem;
+		}
+		.picture {
+			width: 10rem;
+			height: 10rem;
+		}
+	}
+}
