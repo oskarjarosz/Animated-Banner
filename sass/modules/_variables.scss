@@ -12,7 +12,7 @@ sans-serif;
 	left: 200px;
 }
 
-@animation($value...) {
+@mixin animation($value...) {
 	-webkit-animation: $value;
 	-moz-animation: $value;
 	animation: $value;

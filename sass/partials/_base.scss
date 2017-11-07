@@ -30,21 +30,25 @@
 .picture1 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(-100px);
+	@include animation(changeColor .5s 4.5s steps(1) forwards);
 }
 
 .picture2 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(0);
+	@include animation(changeColor .5s 4.75s steps(1) forwards);
 }
 
 .picture3 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(-200px);
+	@include animation(changeColor .5s 5s steps(1) forwards);
 }
 
 .picture4 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(-300px);
+	@include animation(changeColor .5s 5.25s steps(1) forwards);
 }
 
 .row1 {

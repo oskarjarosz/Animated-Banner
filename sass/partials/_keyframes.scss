@@ -35,11 +35,24 @@
 }
 
 
+
 @keyframes separate {
 	from {
 		justify-content: center;
 	}
 	to {
 		justify-content: space-between;
+	}
+}
+
+
+
+@keyframes changeColor {
+	from {
+		background-position-y: -100px;
+	}
+
+	to {
+		background-position-y: 0;
 	}
 }
