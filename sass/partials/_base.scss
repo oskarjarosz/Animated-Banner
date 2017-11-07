@@ -30,47 +30,49 @@
 .picture1 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(-100px);
-	@include animation(changeColor .5s 4.5s steps(1) forwards);
+	@include animation(changeColor .5s 4.5s steps(1) forwards, rotateLeft 3s 6s infinite linear forwards);
 }
+
 
 .picture2 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(0);
-	@include animation(changeColor .5s 4.75s steps(1) forwards);
+	@include animation(changeColor .5s 4.75s steps(1) forwards, rotateRight 3s 6s infinite linear forwards);
 }
 
 .picture3 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(-200px);
-	@include animation(changeColor .5s 5s steps(1) forwards);
+	@include animation(changeColor .5s 5s steps(1) forwards, rotateLeft 3s 6s infinite linear forwards);
 }
 
 .picture4 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(-300px);
-	@include animation(changeColor .5s 5.25s steps(1) forwards);
+	@include animation(changeColor .5s 5.25s steps(1) forwards, rotateRight 3s 6s infinite linear forwards);
 }
 
+
 .row1 {
-	@include row();
+	@include rowPosition();
 	@include animation(fallDownText1 1s 1 linear forwards,
-	separate 1s 3.5s 1 linear forwards);
+	separate 1s 3.5s 1 linear forwards, moveLeft 3s 6s 1 linear forwards);
 }
 
 .row2 {
-	@include row();
+	@include rowPosition();
 	@include animation(fallDownText2 1s 1s 1 linear forwards,
-	separate 1s 3.75s 1 linear forwards);
+	separate 1s 3.75s 1 linear forwards, moveRight 3s 6s 1 linear forwards);
 }
 
 .row3 {
-	@include row();
+	@include rowPosition();
 	@include animation(fallDownText3 1s 2s 1 linear forwards,
-	separate 1s 4s 1 linear forwards);
+	separate 1s 4s 1 linear forwards, moveLeft 3s 6s 1 linear forwards);
 }
 
 .row4 {
-	@include row();
+	@include rowPosition();
 	@include animation(fallDownText4 1s 3s 1 linear forwards,
-	separate 1s 4.25s 1 linear forwards);
+	separate 1s 4.25s 1 linear forwards, moveRight 3s 6s 1 linear forwards);
 }

@@ -56,3 +56,42 @@
 		background-position-y: 0;
 	}
 }
+
+
+
+@keyframes moveLeft {
+	0% {
+		left: 200px;
+	}
+	100% {
+		left: -1000px;
+	}
+}
+
+@keyframes moveRight {
+	0% {
+		left: 200px;
+	}
+	100% {
+		left: 1400px;
+	}
+}
+
+
+@keyframes rotateLeft {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes rotateRight {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
