@@ -2,7 +2,7 @@ $font-stack: 'Arial',
 sans-serif;
 
 @mixin backgroundImage($h) {
-	background: url('../../images/sprite.png') $h -100px no-repeat;
+	background: url('../images/sprite.png') $h -100px no-repeat;
 }
 
 @mixin row($animationName) {
