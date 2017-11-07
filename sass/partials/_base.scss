@@ -1,29 +1,67 @@
 @import '../modules/_variables';
+@import 'keyframes';
 
-html {
-	font-size: 62.5%;
+.container {
 	font-style: $font-stack;
-	.container {
-		width: 100rem;
-		height: 60rem;
-		margin: 0 auto;
-		position: relative;
-		overflow: hidden;
-		.row {
-			position: absolute;
-			width: 60rem;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.text {
-			width: 30rem;
-			text-transform: uppercase;
-			font-size: 3rem;
-		}
-		.picture {
-			width: 10rem;
-			height: 10rem;
-		}
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	.row {
+		position: absolute;
+		width: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+	.text {
+		width: 300px;
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	.picture {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+
+.picture1 {
+	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
+	@include backgroundImage(-100px);
+}
+
+.picture2 {
+	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
+	@include backgroundImage(0);
+}
+
+.picture3 {
+	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
+	@include backgroundImage(-200px);
+}
+
+.picture4 {
+	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
+	@include backgroundImage(-300px);
+}
+
+.row1 {
+	@include row(fallDownText1);
+}
+
+.row2 {
+	@include row(fallDownText2);
+	animation-delay: 1s;
+}
+
+.row3 {
+	@include row(fallDownText3);
+	animation-delay: 2s;
+}
+
+.row4 {
+	@include row(fallDownText4);
+	animation-delay: 3s;
 }

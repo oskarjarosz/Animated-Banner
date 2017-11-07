@@ -1,3 +1,13 @@
 $font-stack: 'Arial',
 sans-serif;
-$bg-image: url('../images/sprite.png') no-repeat;
+$bg-image: url('../../images/sprite.png');
+
+@mixin backgroundImage($h) {
+	background: $bg-image $h -100px no-repeat;
+}
+
+@mixin row($animationName) {
+	top: -100px;
+	left: 200px;
+	animation: $animationName 1s 1 linear forwards;
+}
