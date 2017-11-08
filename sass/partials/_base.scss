@@ -33,7 +33,6 @@
 	@include animation(changeColor .5s 4.5s steps(1) forwards, rotateLeft 3s 6s infinite linear forwards);
 }
 
-
 .picture2 {
 	/*background: url('../images/sprite.png') -100px -100px no-repeat;*/
 	@include backgroundImage(0);
@@ -54,25 +53,46 @@
 
 
 .row1 {
-	@include rowPosition();
+	@include rowPosition(200px);
 	@include animation(fallDownText1 1s 1 linear forwards,
 	separate 1s 3.5s 1 linear forwards, moveLeft 3s 6s 1 linear forwards);
 }
 
 .row2 {
-	@include rowPosition();
+	@include rowPosition(200px);
 	@include animation(fallDownText2 1s 1s 1 linear forwards,
 	separate 1s 3.75s 1 linear forwards, moveRight 3s 6s 1 linear forwards);
 }
 
 .row3 {
-	@include rowPosition();
+	@include rowPosition(200px);
 	@include animation(fallDownText3 1s 2s 1 linear forwards,
 	separate 1s 4s 1 linear forwards, moveLeft 3s 6s 1 linear forwards);
 }
 
 .row4 {
-	@include rowPosition();
+	@include rowPosition(200px);
 	@include animation(fallDownText4 1s 3s 1 linear forwards,
 	separate 1s 4.25s 1 linear forwards, moveRight 3s 6s 1 linear forwards);
+}
+
+.row5 {
+	@include row5row6(150px);
+	@include animation(showText 2s 8.25s linear forwards, rotateX 2s 13s linear forwards);
+}
+
+.row6 {
+	@include row5row6(300px);
+	@include animation(showText 2s 8.25s linear forwards, rotateX 2s 13s linear forwards);
+}
+
+.row7 {
+	@include rowPosition(-50px);
+	@include animation(rollDown 2s 10s linear forwards, rollRight 1s 12s linear forwards, rotateX 2s 13s linear forwards);
+	.text7 {
+		border: 1px solid black;
+		padding: 1px;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
 }

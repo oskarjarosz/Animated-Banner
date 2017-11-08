@@ -8,9 +8,15 @@ sans-serif;
 	background: url('../images/sprite.png') $h -100px no-repeat;
 }
 
-@mixin rowPosition() {
+@mixin rowPosition($left) {
 	top: -100px;
-	left: 200px;
+	left: $left;
+}
+
+@mixin row5row6($margintop) {
+	margin: $margintop 0 0 200px;
+	font-size: 0;
+	text-transform: uppercase;
 }
 
 @mixin animation($value...) {

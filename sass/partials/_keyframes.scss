@@ -95,3 +95,36 @@
 		transform: rotate(360deg);
 	}
 }
+
+@keyframes showText {
+	0% {
+		font-size: 10px;
+	}
+	100% {
+		font-size: 35px;
+	}
+}
+
+@keyframes rollDown {
+	0% {
+		top: -100px;
+	}
+	100% {
+		top: 235px;
+	}
+}
+
+@keyframes rollRight {
+	0% {
+		left: -50px;
+	}
+	100% {
+		left: 200px;
+	}
+}
+
+@keyframes rotateX {
+	100% {
+		transform: rotateX(360deg);
+	}
+}
