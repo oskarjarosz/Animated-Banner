@@ -78,17 +78,17 @@
 
 .row5 {
 	@include row5row6(150px);
-	@include animation(showText 2s 8.25s linear forwards, rotateX 2s 13s linear forwards);
+	@include animation(showText 2s 8.25s linear forwards, rotateX 2s 13s linear forwards, toTransparent 2s 15s linear forwards);
 }
 
 .row6 {
 	@include row5row6(300px);
-	@include animation(showText 2s 8.25s linear forwards, rotateX 2s 13s linear forwards);
+	@include animation(showText 2s 8.25s linear forwards, rotateX 2s 13s linear forwards, toTransparent 2s 15s linear forwards);
 }
 
 .row7 {
 	@include rowPosition(-50px);
-	@include animation(rollDown 2s 10s linear forwards, rollRight 1s 12s linear forwards, rotateX 2s 13s linear forwards);
+	@include animation(rollDown 2s 10s linear forwards, rollRight 1s 12s linear forwards, rotateX 2s 13s linear forwards, toTransparent 2s 15s linear forwards);
 	.text7 {
 		border: 1px solid black;
 		padding: 1px;

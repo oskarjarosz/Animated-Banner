@@ -128,3 +128,14 @@
 		transform: rotateX(360deg);
 	}
 }
+
+@keyframes toTransparent {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+
+}
